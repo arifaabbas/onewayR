@@ -1,0 +1,12 @@
+Package: onewayR
+Title: Oneway
+Version: 0.0.0.9000
+Authors@R: person("Arifa", "Abbas", , "afakhruddin@wesleyan.edu", role = c("aut", "cre"))
+Description: This package contains four functions that conducts a oneway,
+    analysis of variance and allows one to print, plot and summarize the,
+    results of the analysis conducted 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
