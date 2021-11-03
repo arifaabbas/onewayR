@@ -15,10 +15,14 @@ install.packages("onewayR")
 ## Example
 
 This is a basic example which shows you show to conduct the 
-analysis and the print, plot and summarize it
+analysis and the print, plot and summarize the results
 ``` r
 library(onewayR)
-oneway( etc)
+oneway(mpg ~ wt, mtcars)
+oneway <- oneway(mpg ~ wt, mtcars)
+plot.oneway(oneway)
+print.oneway(oneway)
+summary.oneway(oneway)
 ```
 ### Hope you enjoy the package and have a great day!
 

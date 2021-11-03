@@ -1,4 +1,5 @@
 #'@title Performs a oneway analysis
+#'
 #'@description
 #'This function performs a oneway analysis of variance and returns a object of
 #'class "oneway"
