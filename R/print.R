@@ -1,15 +1,15 @@
-#'@title Prints results
+#'@title Prints the results
 #'@description
-#'This function prints the result of the analysis
+#'This function prints the result of the analysis oneway
 #'
-#'@param x a numeric vector
-#'@param ... a numeric vector
+#'@param x object class of type oneway
+#'@param ... additional parameters that are being passed to the print function
 #'
-#'@return a numeric vector
+#'@return the results of the analysis oneway printed in the console
 #'@export
 #'@examples
-#'add(2,3)
-#'add(mtcars$mpg, mtcars$hp)
+#'print.oneway(oneway,...)
+
 
 print.oneway <- function(x, ...){
   if(!inherits(x, "oneway")) stop("Must be class 'oneway'")
@@ -20,3 +20,4 @@ print.oneway <- function(x, ...){
       "====================================================\n", sep="")
   print(summary.lm(x$anova), ...)
 }
+

@@ -1,21 +1,22 @@
-#'@title Plots the results
+#'@title Prints a summary
 #'
 #'@description
-#'This function prints a summary of the analysis
+#'This function prints a summary of the analysis oneway.
 #'
-#'@param x  ?? If not class "oneway" the function
-#'will stop and state that class must be oneway.
-#'@param ... parameters passed to the oneway function.
+#'@param x object class of type oneway
+#'@param ... additional parameters that are being passed to the print function.
 #'
 #'
-#'@return a boxplot ?????
+#'@return a data frame that summarizes the analysis of oneway.
 #'@export
 #'
 #'@examples
-#'plot.oneway(x, col = "" , ...) ???
+#'plot.oneway(oneway, ...)
+
 
 
 summary.oneway <- function(x, ...){
   if(!inherits(x, "oneway")) stop("x must  be class 'oneway'")
   print(anova(x$anova), ...)
 }
+

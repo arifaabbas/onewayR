@@ -1,21 +1,22 @@
-#'@title Plots results
+#'@title Plots the results
 #'@description
-#'This function prints the results of the analysis
+#'This function plots the results of the analysis oneway
 #'
-#'@param x ???? If not class "oneway" the function
-#'will stop and state that class must be oneway.
+#'@param x object class of type oneway
 #'@param color input a color of choice using col = "x". If not specified the
 #'default color is skyblue.
-#'@param ... parameters passed to the oneway function.
+#'@param ... additional parameters that are being passed to the print function
 #'
 #'
-#'@return a boxplot ???
+#'@return  boxplot plotting the results of the analysis oneway.
 #'@export
 #'@examples
-#'plot.oneway(x, col = "" , ...) ???
+#'plot.oneway(oneway, ...)
+#'plot.oneway(oneway, col = "red", ...)
 
 
 plot.oneway <- function(x, col="skyblue", ...){
   if(!inherits(x, "oneway")) stop("Must be class 'oneway'")
   boxplot(x$anova$terms, x$anova$model, ...)
 }
+

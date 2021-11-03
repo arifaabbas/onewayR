@@ -2,25 +2,25 @@
 % Please edit documentation in R/plot.R
 \name{plot.oneway}
 \alias{plot.oneway}
-\title{Plots results}
+\title{Plots the results}
 \usage{
 \method{plot}{oneway}(x, col = "skyblue", ...)
 }
 \arguments{
-\item{x}{???? If not class "oneway" the function
-will stop and state that class must be oneway.}
+\item{x}{object class of type oneway}
 
-\item{...}{parameters passed to the oneway function.}
+\item{...}{additional parameters that are being passed to the print function}
 
 \item{color}{input a color of choice using col = "x". If not specified the
 default color is skyblue.}
 }
 \value{
-a boxplot ???
+boxplot plotting the results of the analysis oneway.
 }
 \description{
-This function prints the results of the analysis
+This function plots the results of the analysis oneway
 }
 \examples{
-plot.oneway(x, col = "" , ...) ???
+plot.oneway(oneway, ...)
+plot.oneway(oneway, col = "red", ...)
 }

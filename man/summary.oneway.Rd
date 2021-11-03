@@ -2,22 +2,21 @@
 % Please edit documentation in R/summary.R
 \name{summary.oneway}
 \alias{summary.oneway}
-\title{Plots the results}
+\title{Prints a summary}
 \usage{
 \method{summary}{oneway}(x, ...)
 }
 \arguments{
-\item{x}{?? If not class "oneway" the function
-will stop and state that class must be oneway.}
+\item{x}{object class of type oneway}
 
-\item{...}{parameters passed to the oneway function.}
+\item{...}{additional parameters that are being passed to the print function.}
 }
 \value{
-a boxplot ?????
+a data frame that summarizes the analysis of oneway.
 }
 \description{
-This function prints a summary of the analysis
+This function prints a summary of the analysis oneway.
 }
 \examples{
-plot.oneway(x, col = "" , ...) ???
+plot.oneway(oneway, ...)
 }

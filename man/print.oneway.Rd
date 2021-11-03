@@ -2,22 +2,21 @@
 % Please edit documentation in R/print.R
 \name{print.oneway}
 \alias{print.oneway}
-\title{Prints results}
+\title{Prints the results}
 \usage{
 \method{print}{oneway}(x, ...)
 }
 \arguments{
-\item{x}{a numeric vector}
+\item{x}{object class of type oneway}
 
-\item{...}{a numeric vector}
+\item{...}{additional parameters that are being passed to the print function}
 }
 \value{
-a numeric vector
+the results of the analysis oneway printed in the console
 }
 \description{
-This function prints the result of the analysis
+This function prints the result of the analysis oneway
 }
 \examples{
-add(2,3)
-add(mtcars$mpg, mtcars$hp)
+print.oneway(oneway,...)
 }

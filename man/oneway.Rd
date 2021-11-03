@@ -7,9 +7,9 @@
 oneway(formula, data)
 }
 \arguments{
-\item{formula}{???}
+\item{formula}{argument that takes an dependent variable ~ independent variable}
 
-\item{data}{???}
+\item{data}{the data set that the dependent and independent variable will be taken from}
 }
 \value{
 a object of class "oneway"
@@ -19,5 +19,5 @@ This function performs a oneway analysis of variance and returns a object of
 class "oneway"
 }
 \examples{
-oneway(formula, dataset) ????
+oneway(mpg ~ wt, mtcars)
 }

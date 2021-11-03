@@ -3,14 +3,14 @@
 #'This function performs a oneway analysis of variance and returns a object of
 #'class "oneway"
 #'
-#'@param formula ???
-#'@param data ???
+#'@param formula argument that takes an dependent variable ~ independent variable
+#'@param data the data set that the dependent and independent variable will be taken from
 #'
 #'@return a object of class "oneway"
 #'@export
 #'
 #'@examples
-#'oneway(formula, dataset) ????
+#'oneway(mpg ~ wt, mtcars)
 
 oneway <- function(formula, data) {
 
@@ -30,3 +30,5 @@ oneway <- function(formula, data) {
   return(result)
 
 }
+
+
