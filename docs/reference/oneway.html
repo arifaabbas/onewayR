@@ -121,11 +121,11 @@ class "oneway"</p>
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>formula</th>
-      <td><p>???</p></td>
+      <td><p>argument that takes an dependent variable ~ independent variable</p></td>
     </tr>
     <tr>
       <th>data</th>
-      <td><p>???</p></td>
+      <td><p>the data set that the dependent and independent variable will be taken from</p></td>
     </tr>
     </table>
 
@@ -134,7 +134,62 @@ class "oneway"</p>
     <p>a object of class "oneway"</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"></pre>
+    <pre class="examples"><div class='input'><span class='fu'>oneway</span><span class='op'>(</span><span class='va'>mpg</span> <span class='op'>~</span> <span class='va'>wt</span>, <span class='va'>mtcars</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; 
+#&gt; Summary Statistics
+#&gt; ====================================================
+#&gt;       wt      mpg.n   mpg.mean     mpg.sd
+#&gt; 1  1.513  1.0000000 30.4000000         NA
+#&gt; 2  1.615  1.0000000 30.4000000         NA
+#&gt; 3  1.835  1.0000000 33.9000000         NA
+#&gt; 4  1.935  1.0000000 27.3000000         NA
+#&gt; 5  2.140  1.0000000 26.0000000         NA
+#&gt; 6  2.200  1.0000000 32.4000000         NA
+#&gt; 7  2.320  1.0000000 22.8000000         NA
+#&gt; 8  2.465  1.0000000 21.5000000         NA
+#&gt; 9  2.620  1.0000000 21.0000000         NA
+#&gt; 10 2.770  1.0000000 19.7000000         NA
+#&gt; 11 2.780  1.0000000 21.4000000         NA
+#&gt; 12 2.875  1.0000000 21.0000000         NA
+#&gt; 13 3.150  1.0000000 22.8000000         NA
+#&gt; 14 3.170  1.0000000 15.8000000         NA
+#&gt; 15 3.190  1.0000000 24.4000000         NA
+#&gt; 16 3.215  1.0000000 21.4000000         NA
+#&gt; 17 3.435  1.0000000 15.2000000         NA
+#&gt; 18 3.440  3.0000000 18.5666667  0.7094599
+#&gt; 19 3.460  1.0000000 18.1000000         NA
+#&gt; 20 3.520  1.0000000 15.5000000         NA
+#&gt; 21 3.570  2.0000000 14.6500000  0.4949747
+#&gt; 22 3.730  1.0000000 17.3000000         NA
+#&gt; 23 3.780  1.0000000 15.2000000         NA
+#&gt; 24 3.840  1.0000000 13.3000000         NA
+#&gt; 25 3.845  1.0000000 19.2000000         NA
+#&gt; 26 4.070  1.0000000 16.4000000         NA
+#&gt; 27 5.250  1.0000000 10.4000000         NA
+#&gt; 28 5.345  1.0000000 14.7000000         NA
+#&gt; 29 5.424  1.0000000 10.4000000         NA
+#&gt; 
+#&gt; Anova
+#&gt; ====================================================
+#&gt; 
+#&gt; Call:
+#&gt; lm(formula = formula, data = data_complete)
+#&gt; 
+#&gt; Residuals:
+#&gt;     Min      1Q  Median      3Q     Max 
+#&gt; -4.5432 -2.3647 -0.1252  1.4096  6.8727 
+#&gt; 
+#&gt; Coefficients:
+#&gt;             Estimate Std. Error t value Pr(&gt;|t|)    
+#&gt; (Intercept)  37.2851     1.8776  19.858  &lt; 2e-16 ***
+#&gt; wt           -5.3445     0.5591  -9.559 1.29e-10 ***
+#&gt; ---
+#&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+#&gt; 
+#&gt; Residual standard error: 3.046 on 30 degrees of freedom
+#&gt; Multiple R-squared:  0.7528,	Adjusted R-squared:  0.7446 
+#&gt; F-statistic: 91.38 on 1 and 30 DF,  p-value: 1.294e-10
+#&gt; </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

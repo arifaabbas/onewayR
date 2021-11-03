@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Prints results — print.oneway • onewayR</title>
+<title>Prints the results — print.oneway • onewayR</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Prints results — print.oneway" />
-<meta property="og:description" content="This function prints the result of the analysis" />
+<meta property="og:title" content="Prints the results — print.oneway" />
+<meta property="og:description" content="This function prints the result of the analysis oneway" />
 
 
 
@@ -103,13 +103,13 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Prints results</h1>
+    <h1>Prints the results</h1>
     
     <div class="hidden name"><code>print.oneway.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>This function prints the result of the analysis</p>
+    <p>This function prints the result of the analysis oneway</p>
     </div>
 
     <pre class="usage"><span class='co'># S3 method for oneway</span>
@@ -120,22 +120,21 @@
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>x</th>
-      <td><p>a numeric vector</p></td>
+      <td><p>object class of type oneway</p></td>
     </tr>
     <tr>
       <th>...</th>
-      <td><p>a numeric vector</p></td>
+      <td><p>additional parameters that are being passed to the print function</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>a numeric vector</p>
+    <p>the results of the analysis oneway printed in the console</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>add</span><span class='op'>(</span><span class='fl'>2</span>,<span class='fl'>3</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='error'>Error in add(2, 3): could not find function "add"</span></div><div class='input'><span class='fu'>add</span><span class='op'>(</span><span class='va'>mtcars</span><span class='op'>$</span><span class='va'>mpg</span>, <span class='va'>mtcars</span><span class='op'>$</span><span class='va'>hp</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='error'>Error in add(mtcars$mpg, mtcars$hp): could not find function "add"</span></div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>print.oneway</span><span class='op'>(</span><span class='va'>oneway</span>,<span class='va'>...</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; <span class='error'>Error in print.oneway(oneway, ...): could not find function "print.oneway"</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
